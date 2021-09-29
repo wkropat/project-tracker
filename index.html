@@ -7,14 +7,17 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta name="Description" content="Enter your description here" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="./style.css">
 
   <title>Project Tracker</title>
 </head>
 
 <body>
-    <header>
+    <header class="jumbotron jumbotron-fluid bg-dark text-light">
         <h1>Project tracker</h1>
         <h2>Current time and date:<br/></h2>
+        <h2 id="timegoeshere"></h2>
         <!-- have moment put current date on header h2 -->
     
     </header>
@@ -22,9 +25,21 @@
     <div>
         <!-- Left hand side -->
         <h3>Instructions</h3>
-            <p>Click the button below to open a form and provide information for the following:</p>
-            <!-- grid? list? items: project name, project type, due date, hoursly rate -->
-            <button>Add Project</button>
+        <p>Click the button below to open a form and provide information for the following:</p>
+        <!-- grid? list? items: project name, project type, due date, hoursly rate -->
+        <div class="row">
+            <div class="col">
+              1 of 3
+            </div>
+            <div class="col">
+              2 of 3
+            </div>
+            <div class="col">
+              3 of 3
+            </div>
+          </div>
+        </div>
+        <button>Add Project</button>
 
     </div>
 
@@ -33,9 +48,32 @@
         <!-- At first, this just show the top level grid with 7 options -->
         <!-- Project Name, Project Type, Hourly Rate($), Due Date, Days Until Due Date, Potentioal Total Earnings ($), Close -->
         <!-- Dynamically generate the rows based on the user submission -->
-
+        <div class="row">
+            <div class="col">
+              1 of 7
+            </div>
+            <div class="col">
+              2 of 7
+            </div>
+            <div class="col">
+              3 of 7
+            </div>
+            <div class="col">
+                4 of 7
+            </div>
+            <div class="col">
+                5 of 7
+            </div>
+            <div class="col">
+                6 of 7
+            </div>
+            <div class="col">
+                7 of 7
+            </div>
+          </div>
     </div>
-
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 </body>
 
 
